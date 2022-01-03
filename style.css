@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Itim', cursive;
+}
+
+body {
+  overflow:hidden;
+}
+
+.botao_musica {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 2px 2px rgb(240, 7, 7);
+  cursor: pointer;
+  border: none;
+}
+
+.botao_musica :hover {
+  color: rgb(168, 7, 7);
+}
+
+i {
+  font-size: 30px;
+  color: #FF3860;
+}
+
+.background{
+  padding-top: 1px;
+  background: linear-gradient(-45deg, #ac3916, #a71d51, #0b4f68, #078165);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.container  {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+}
+
+.tile {
+  border: 1px solid white;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playerX {
+  color: #09C372;
+}
+
+.playerO {
+  color: #498AFB;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#reset {
+  background-color: #FF3860;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 22px;
+  margin-left: 1em;
+  cursor: pointer;
+  box-shadow: 2px 1px 1px gray;
+}
+
